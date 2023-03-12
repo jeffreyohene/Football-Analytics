@@ -25,7 +25,7 @@ df_t2 = df_shots[df_shots.team_name == t2].copy()
 
 # subsetting goals
 df_g1 = df_gols[df_gols.team_name == t1].copy()
-df_g2 = df_gols[df_gols.team_name == t1].copy()
+df_g2 = df_gols[df_gols.team_name == t2].copy()
 
 #shifting coordinates for Madrid
 df_t1['X'] = pitch.dim.right - df_t1.X
@@ -56,7 +56,7 @@ s2 = pitch.scatter(df_g2.X,df_g2.Y, s=df_g2.xG * 600,
                          ec='black', color='green',marker='*',alpha=0.85, ax=axs['pitch'])
 
 
-plt.gca().invert_yaxis()                        
+plt.gca().invert_xaxis()                        
 
 
 # importing font
@@ -77,42 +77,41 @@ txt1 = axs['pitch'].text(x=25, y=8, s='Real Madrid Shots & Goal', fontproperties
 txt2 = axs['pitch'].text(x=95, y=8, s='Espanyol Shots & Goal', fontproperties=fm.prop, color='maroon',
                          ha='center', va='center', fontsize=13)
 
-ax_image = add_image(rma_logo, fig, left=0.35, bottom=0.6, width=0.08,
+ax_image = add_image(rma_logo, fig, left=0.57, bottom=0.6, width=0.08,
                      alpha=0.9)
 
-ax_image = add_image(esp_logo, fig, left=0.56, bottom=0.6, width=0.08,
+ax_image = add_image(esp_logo, fig, left=0.35, bottom=0.6, width=0.08,
                      alpha=0.9)
 
-txt3 =axs['pitch'].text(x=60.3,y=23,s='Total Shots',fontproperties=fm.prop, color='black',
+txt3 =axs['pitch'].text(x=60.3,y=58,s='Total Shots',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=15)
 
-txt4 =axs['pitch'].text(x=57,y=20,s='22',fontproperties=fm.prop, color='dodgerblue',
+txt4 =axs['pitch'].text(x=57,y=61,s='22',fontproperties=fm.prop, color='dodgerblue',
                          ha='center', va='center', fontsize=14)
 
-txt5 =axs['pitch'].text(x=63,y=20,s='7',fontproperties=fm.prop, color='green',
+txt5 =axs['pitch'].text(x=63,y=61,s='7',fontproperties=fm.prop, color='green',
                          ha='center', va='center', fontsize=14)
 
-txt6 =axs['pitch'].text(x=60,y=17,s='Expected Goals',fontproperties=fm.prop, color='black',
+txt6 =axs['pitch'].text(x=60,y=70,s='Expected Goals',fontproperties=fm.prop, color='black',
                        ha='center', va='center', fontsize=15)
 
-txt7 =axs['pitch'].text(x=57,y=14,s='1.71',fontproperties=fm.prop, color='dodgerblue',
+txt7 =axs['pitch'].text(x=57,y=73,s='1.71',fontproperties=fm.prop, color='dodgerblue',
                        ha='center', va='center', fontsize=14)
 
-txt8 =axs['pitch'].text(x=63,y=14  ,s='1.17',fontproperties=fm.prop, color='green',
+txt8 =axs['pitch'].text(x=63,y=73,s='1.17',fontproperties=fm.prop, color='green',
                          ha='center', va='center', fontsize=14)
 
-txt9 =axs['pitch'].text(x=59.7,y=11,s='Actual Goals',fontproperties=fm.prop, color='black',
+txt9 =axs['pitch'].text(x=59.7,y=64,s='Actual Goals',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=15)  
 
-txt10 =axs['pitch'].text(x=57,y=8,s='3',fontproperties=fm.prop, color='dodgerblue',
+txt10 =axs['pitch'].text(x=57,y=67,s='3',fontproperties=fm.prop, color='dodgerblue',
                         ha='center', va='center', fontsize=14)
 
-txt11 =axs['pitch'].text(x=63,y=8,s='1',fontproperties=fm.prop, color='green',
+txt11 =axs['pitch'].text(x=63,y=67,s='1',fontproperties=fm.prop, color='green',
                          ha='center', va='center', fontsize=14)                                                                
 
 
 
-axs['pitch'].text(x=60, y=85, s="REAL MADRID CF v RCD ESPANYOL SHOTMAP", color='gold', fontsize=20, ha='center', va='center')
+axs['pitch'].text(x=60, y=-2, s="REAL MADRID CF v RCD ESPANYOL SHOTMAP", color='maroon', fontsize=20, ha='center', va='center')
 
-axs['pitch'].text(120, 1, '@jeffrstats | Jeffrey Ohene', ha='right', va='center',
-                    color='grey')
+axs['pitch'].text(1, 78, '@jeffrstats', ha='right', va='center',color='grey',fontsize=15)
