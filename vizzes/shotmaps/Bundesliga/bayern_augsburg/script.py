@@ -86,28 +86,28 @@ ax_image = add_image(t2_logo, fig, left=0.35, bottom=0.16, width=0.08,
 txt3 =axs['pitch'].text(x=60.3,y=58,s='Schüsse',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=15)
 
-txt4 =axs['pitch'].text(x=57,y=61,s='22',fontproperties=fm.prop, color='dodgerblue',
+txt4 =axs['pitch'].text(x=57,y=61,s='23',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=14)
 
-txt5 =axs['pitch'].text(x=63,y=61,s='7',fontproperties=fm.prop, color='green',
+txt5 =axs['pitch'].text(x=63,y=61,s='13',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=14)
 
 txt6 =axs['pitch'].text(x=60,y=70,s='Erwartete Tore',fontproperties=fm.prop, color='black',
                        ha='center', va='center', fontsize=15)
 
-txt7 =axs['pitch'].text(x=57,y=73,s='1.71',fontproperties=fm.prop, color='dodgerblue',
+txt7 =axs['pitch'].text(x=57,y=73,s='2.42',fontproperties=fm.prop, color='black',
                        ha='center', va='center', fontsize=14)
 
-txt8 =axs['pitch'].text(x=63,y=73,s='1.17',fontproperties=fm.prop, color='green',
+txt8 =axs['pitch'].text(x=63,y=73,s='2.52',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=14)
 
 txt9 =axs['pitch'].text(x=59.7,y=64,s='Tore',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=15)  
 
-txt10 =axs['pitch'].text(x=57,y=67,s='3',fontproperties=fm.prop, color='dodgerblue',
+txt10 =axs['pitch'].text(x=57,y=67,s='3',fontproperties=fm.prop, color='black',
                         ha='center', va='center', fontsize=14)
 
-txt11 =axs['pitch'].text(x=63,y=67,s='1',fontproperties=fm.prop, color='green',
+txt11 =axs['pitch'].text(x=63,y=67,s='1',fontproperties=fm.prop, color='black',
                          ha='center', va='center', fontsize=14)                                                                
 
 
