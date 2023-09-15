@@ -15,15 +15,20 @@ che_shots = pd.read_csv('che_shots.csv',encoding='iso-8859-1')
 agn_che = pd.read_csv('agn_che.csv',encoding='iso-8859-1')
 
 # subsetting shots
-shots = che_shots[che_shots.result == 'Shot'].copy()
-gols_che = che_shots[che_shots.result == 'Goal'].copy()
+shots = che_shots[che_shots.outcome == 'Shot'].copy()
+gols_che = che_shots[che_shots.outcome == 'Goal'].copy()
 
-shots_con = agn_che[agn_che.result == 'Shot'].copy()
-gols_agn = agn_che[agn_che.result == 'Goal'].copy()
+shots_con = agn_che[agn_che.outcome == 'Shot'].copy()
+gols_agn = agn_che[agn_che.outcome == 'Goal'].copy()
 
 #shifting coordinates for shots against
 shots_con['X'] = pitch.dim.right - shots_con.X
 gols_agn['X'] = pitch.dim.right - gols_agn.X
+
+# Optional to run: Use for debugging if coordinates exhibit unusual behavior
+#print(shots_con['X'])
+#shots_con['X'] = pitch.dim.right - shots_con['X']
+#print(shots_con['X'])
 
 # setting up plot
 fig, axs = pitch.jointgrid(figheight=10,  # the figure is 10 inches high
@@ -38,15 +43,15 @@ fig, axs = pitch.jointgrid(figheight=10,  # the figure is 10 inches high
                            grid_height=0.8)  # grid takes up 80% of the figure height
 
 # Shot maps
-sc_t1 = pitch.scatter(shots.X * 120, shots.Y * 80, s=shots.xG * 600,
-                         ec='black', color='red',alpha=0.3,ax=axs['pitch'])
-sc_t2 = pitch.scatter(gols_che.X* 120,gols_che.Y* 80, s=gols_che.xG * 600,
+sc_t1 = pitch.scatter(shots.X, shots.Y, s=shots.xG * 600,
+                         ec='black', color='red',alpha=0.5,ax=axs['pitch'])
+sc_t2 = pitch.scatter(gols_che.X,gols_che.Y, s=gols_che.xG * 600,
                          ec='black', color='green',marker='*',alpha=0.85, ax=axs['pitch'])
 
 
-s1 = pitch.scatter(shots_con.X* 120, shots_con.Y* 80, s=shots_con.xG * 600,
-                         ec='black', color='red',alpha=0.3,ax=axs['pitch'])
-s2 = pitch.scatter(gols_agn.X* 120,gols_agn.Y* 80, s=gols_agn.xG * 600,
+s1 = pitch.scatter(shots_con.X, shots_con.Y, s=shots_con.xG * 600,
+                         ec='black', color='red',alpha=0.5,ax=axs['pitch'])
+s2 = pitch.scatter(gols_agn.X,gols_agn.Y, s=gols_agn.xG * 600,
                          ec='black', color='green',marker='*',alpha=0.85, ax=axs['pitch'])
 
 
@@ -59,23 +64,19 @@ fm_rubik = FontManager('https://github.com/google/fonts/blob/main/ofl/arsenal/Ar
 
 
 # importing club logos
-che_url = 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/480px-Chelsea_FC.svg.png'
-logo = Image.open(urlopen(che_url))
+url = 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/480px-Chelsea_FC.svg.png'
+logo = Image.open(urlopen(url))
 
 
+ax_image = add_image(logo, fig,left=0.22,bottom=0.81,width=0.1)
 
-txt1 = axs['pitch'].text(x=25, y=8, s='Chelsea Shots & Goals', fontproperties=fm.prop, color='maroon',
+txt1 = axs['pitch'].text(x=25, y=8, s='Conceded Shots & Goals', fontproperties=fm.prop, color='#034694',
                          ha='center', va='center', fontsize=13)
-txt2 = axs['pitch'].text(x=95, y=8, s='Conceded Shots & Goals', fontproperties=fm.prop, color='maroon',
+txt2 = axs['pitch'].text(x=95, y=8, s='Chelsea Shots & Goals', fontproperties=fm.prop, color='#034694',
                          ha='center', va='center', fontsize=13)
-
-ax_image = add_image(logo, fig, left=0.57, bottom=0.6, width=0.08,
-                     alpha=0.9)
                                                             
 
-
-
-axs['pitch'].text(x=60, y=-2, s="CHELSEA SEASON SHOTMAP", color='maroon', fontsize=20, ha='center', va='center')
+axs['pitch'].text(x=60, y=-9, s="CHELSEA SEASON SHOTMAP", color='#034694', fontsize=28, ha='center', va='center')
 
 axs['pitch'].text(1, 78, '@jeffrstats', ha='right', va='center',color='grey',fontsize=15)
 
