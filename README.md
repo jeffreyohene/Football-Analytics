@@ -5,8 +5,6 @@ A repo that hosts all my football vizzes and analysis code.
 
 ![Progressive Play in the Premier League](https://raw.githubusercontent.com/jeffreyohene/Football-Analytics/main/The%20Curious%20Case%20of%20Chelsea%20-%20Article/plots/progressive_play.png)
 
-![Progessivitätsspiel in der Bundesliga](https://media.licdn.com/dms/image/C4D22AQGZQifwKV-yHw/feedshare-shrink_1280/0/1675832366003?e=1697673600&v=beta&t=eK-2JrCayUOtrIETsbZT8clkd1UrxpPeR2tJEGd46D8)
-
 ### Goal - xG performance
 ![G-xG Performance](https://raw.githubusercontent.com/jeffreyohene/Football-Analytics/main/The%20Curious%20Case%20of%20Chelsea%20-%20Article/plots/xg_gols.png))
 
@@ -26,3 +24,8 @@ A repo that hosts all my football vizzes and analysis code.
 
 ## Chelsea xG performance
 ![Chelsea xG Performance 22/23](https://media.licdn.com/dms/image/C4D22AQFWZrWuewy8kA/feedshare-shrink_2048_1536/0/1679195381472?e=1697673600&v=beta&t=FUDaqMisRrINNvs1zVfAewElWPVZh6UoOZzYx5HEMbU)
+
+## Radars
+
+#### Marcus Rashford v Bukayo Saka
+![Offensive Metrics comparison: MarcusRashford v Bukayo Saka](https://media.licdn.com/dms/image/C4D22AQH4RlHSTrJe7A/feedshare-shrink_1280/0/1674239886129?e=1697673600&v=beta&t=JEQLambPOHrOXD4UrnOnNNNUcxoRMtwn_viQZTEXxCE)
