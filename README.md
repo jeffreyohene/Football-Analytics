@@ -17,6 +17,7 @@ A repo that hosts all my football vizzes and analysis code.
 ### Shot Maps
 ![Arsenal v United Season Shot Maps: Arsenal](https://media.licdn.com/dms/image/C4D22AQEK3j3wcSIZjw/feedshare-shrink_1280/0/1674403332966?e=1697673600&v=beta&t=qexQVKefjVZJ_lPFhwB9uTsMabUdlbH3nTCuylO9s24)
 ![Arsenal v United Season Shot Maps: United](https://media.licdn.com/dms/image/C4D22AQE_hePwl_ILWA/feedshare-shrink_1280/0/1674403334473?e=1697673600&v=beta&t=j0u4cwVHrKw79_D3fJec0bnJ1m_SyxYVDhzNjeoqEV8)
+![Manchester United vs Brighton & Hove Albion](https://github.com/jeffreyohene/Football-Analytics/blob/main/vizzes/shotmaps/2023_2024/EPL/matchday_5/mun_bha_20230916.png)
 
 #### Real Madrid 2 - 3 Villareal (08.04.2023)
 ![Real Madrid v Villareal](https://media.licdn.com/dms/image/D4D22AQHq2qN6LmD1Ww/feedshare-shrink_800/0/1681053069164?e=1697673600&v=beta&t=gp8F0NxDD85_UzPrNJ_TtmDUdAXCijrZiyDYzqUygKw)
