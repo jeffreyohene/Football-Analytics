@@ -1,0 +1,32 @@
+season,year,winner,points,wins,draws,losses,goals_scored,goals_conceded,runner_up,points,wins,draws,losses,goals_scored,goals_conceded
+1992-1993,1993,Manchester United,84,24,12,6,67,31,Aston Villa,74,21,11,10,57,40
+1993-1994,1994,Manchester United,92,27,11,4,80,38,Blackburn Rovers,84,25,9,8,63,36
+1994-1995,1995,Blackburn Rovers,89,27,8,7,80,39,Manchester United,88,26,10,6,77,28
+1995-1996,1996,Manchester United,82,25,7,6,73,35,Newcastle,78,24,6,8,66,37
+1996-1997,1997,Manchester United,75,21,12,5,76,44,Newcastle,68,19,11,8,73,40
+1997-1998,1998,Arsenal,78,23,9,6,68,33,Manchester United,77,23,8,7,73,26
+1998-1999,1999,Manchester United,79,22,13,3,80,37,Arsenal,78,22,12,4,59,17
+1999-2000,2000,Manchester United,91,28,7,3,97,45,Arsenal,73,22,7,9,73,43
+2000-2001,2001,Manchester United,80,24,8,6,79,31,Arsenal,70,20,10,8,63,38
+2001-2002,2002,Arsenal,87,26,9,3,79,36,Liverpool,80,24,8,6,67,30
+2002-2003,2003,Manchester United,83,25,8,5,74,34,Arsenal,78,23,9,6,85,42
+2003-2004,2004,Arsenal,90,26,12,0,73,26,Chelsea,79,24,7,7,67,30
+2004-2005,2005,Chelsea,95,29,8,1,72,15,Arsenal,83,25,8,5,87,36
+2005-2006,2006,Chelsea,91,29,4,5,72,22,Manchester United,83,25,8,5,72,34
+2006-2007,2007,Manchester United,89,28,5,5,83,27,Chelsea,83,24,11,3,64,24
+2007-2008,2008,Manchester United,87,27,6,5,80,22,Chelsea,85,25,10,3,65,26
+2008-2009,2009,Manchester United,90,28,6,4,68,24,Liverpool,86,25,11,2,77,27
+2009-2010,2010,Chelsea,86,27,5,6,103,32,Manchester United,85,27,4,7,86,28
+2010-2011,2011,Manchester United,80,23,11,4,78,37,Chelsea,71,21,8,9,69,33
+2011-2012,2012,Manchester City,89,28,5,5,93,29,Manchester United,89,28,5,5,89,33
+2012-2013,2013,Manchester United,89,28,5,5,86,43,Manchester City,78,23,9,6,66,34
+2013-2014,2014,Manchester City,86,27,5,6,102,37,Liverpool,84,26,6,6,101,50
+2014-2015,2015,Chelsea,87,26,9,3,73,32,Manchester City,79,24,7,7,83,38
+2015-2016,2016,Leicester City,81,23,12,3,68,36,Arsenal,71,20,11,7,65,36
+2016-2017,2017,Chelsea,93,30,3,5,85,33,Tottenham,86,26,8,4,86,26
+2017-2018,2018,Manchester City,100,32,4,2,106,27,Manchester United,81,25,6,7,68,28
+2018-2019,2019,Manchester City,98,32,2,4,95,23,Liverpool,97,30,7,1,89,22
+2019-2020,2020,Liverpool,99,32,3,3,85,33,Manchester City,81,26,3,9,102,35
+2020-2021,2021,Manchester City,86,27,5,6,83,32,Manchester United,74,21,11,6,73,44
+2021-2022,2022,Manchester City,93,29,6,3,99,26,Liverpool,92,28,8,2,94,26
+2022-2023,2023,Manchester City,89,28,5,5,94,33,Arsenal,84,26,6,6,88,43
